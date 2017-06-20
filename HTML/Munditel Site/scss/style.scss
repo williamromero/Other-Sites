@@ -1,0 +1,505 @@
+@import 'variables';
+@import 'responsive';
+
+@font-face {
+    font-family: 'eurostile_condregular';
+    src: url('../fonts/eurostile_condensed-regular-webfont.woff2') format('woff2'),
+         url('../fonts/eurostile_condensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'eurostile_extdregular';
+    src: url('../fonts/eurostile_extended-regular-webfont.woff2') format('woff2'),
+         url('../fonts/eurostile_extended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'eurostileregular_oblique';
+    src: url('../fonts/eurostile-regular_oblique-webfont.woff2') format('woff2'),
+         url('../fonts/eurostile-regular_oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'eurostileregular';
+    src: url('../fonts/eurostile-regular-webfont.woff2') format('woff2'),
+         url('../fonts/eurostile-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+  background-color: $background-gray;
+  font-family: 'eurostileregular';
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.bg-faded {
+  background: -webkit-linear-gradient(top, $transparent-white , $transparent);
+  // box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 100px;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  transition: ease 0.5s;
+  z-index: 11;
+}
+
+.header-navbar {
+  margin: 0 auto;
+}
+
+.navbar-nav {
+  float: right;
+  height: 100%;
+
+  .nav-item {
+    padding: 15px 20px;
+
+    .nav-link {
+      color: $white;
+      font-size: 1.25em;
+    }
+  }
+
+  .nav-item:active,
+  .nav-item:hover {
+    border-bottom: 2px solid #03A9F4;
+    padding-bottom: 0;
+  }
+
+}
+
+.navbar-brand > img {
+  display: block;
+  margin: 5px auto;
+  width: 270px;
+}
+
+.principal-slider {
+  align-items: center;
+  background-image: url(../imgs/card-train-payment-shadow-01.jpg);
+  background-position: center;
+  background-size: cover;
+  // filter: grayscale(50%);
+  height: 550px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+
+  .lead {
+    color: $white;
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+  }
+
+  .principal-container {
+    display: flex;
+    height: 100%;
+
+    .principal-slider-txt {
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      height: auto;
+      margin: 0 auto;
+
+      .slider-line-btn {
+        display: flex;
+        float: none;
+        margin: 0 auto;
+
+        .jumbo-button {
+          border-color: $green-bright-normal;
+          border-radius: 40px;
+          color: $white;
+          font-size: 1.5em;
+          margin: 0 auto;
+          text-align: center;
+          width: 80%;
+        }
+
+        .jumbo-button:hover {
+          background-color: $green-normal;
+          border-color: $green-bright-normal;
+        }
+      }
+    }
+  }
+}
+
+.principal-box {
+  display: flex;
+  padding: 0;
+
+  .principal-container-box {
+    margin: 0 auto;
+  }
+}
+
+.principal-description-box {
+  margin: 70px auto;
+
+  h2 {
+    color: $blue-desc-title;
+    font-weight: bold;
+    line-height: 2em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .description-button {
+    background-color: $light-blue-btn;
+    border-radius: 20px;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 70px;
+    text-align: center;
+  }
+
+}
+
+.principal-image-box {
+  display: flex;
+  margin: 0 auto;
+
+  img {
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+  }
+}
+
+.banner-information-one {
+  .banner-information-container {
+    .banner-information-box {
+      width: 800px;
+    }
+  }
+}
+
+.banner-information-two {
+  .banner-information-container {
+    .banner-information-box {
+      width: 800px;
+    }
+  }
+}
+
+
+.banner-information-one {
+  background-image: url(../imgs/internet-concept-of-global.jpg);
+  background-size: cover;
+}
+
+.banner-information-two {
+  background-image: url(../imgs/card-train-payment-shadow.jpg);
+  background-size: cover;
+}
+
+.banner-information-one,
+.banner-information-two {
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  .banner-information-shade {
+    background-color: rgba(51,51,51,0.6);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.banner-information-container {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  .banner-information-box {
+    display: flex;
+    height: 180px;
+    margin: 0 auto;
+    // width: 50%;
+
+    .banner-info-icon {
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      background-color: #434a54;
+      display: flex;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0;
+
+      .banner-info-svg {
+        align-content: center;
+        align-items: center;
+        align-self: center;        
+        display: flex;
+        height: 100px;
+        margin: 0 auto;
+      }
+    }
+
+    .banner-info-desc {
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      background-color: rgba(172, 183, 195, 0.3);
+      display: flex;
+      height: 100%;
+      margin: 0 auto;
+      opacity: 1;
+      padding: 0;
+
+      .banner-info-txt {
+        align-content: center;
+        align-items: center;
+        align-self: center;        
+        color: $white;
+        font-size: 1.4em;
+        padding: 0 20px;
+      }
+    }
+  }
+
+}
+
+
+.principal-container {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+
+  .first-section {
+    background-color: $white;
+    margin: 0 auto;
+
+    .first-section-block {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+
+
+.elements-technology-item {
+  background-color: #0076e7;
+}
+
+.elements-localization-item {
+  background-color: #2f5d99;
+}
+
+.elements-payment-item {
+  background-color: #1fa7c7;
+}
+
+.boxes-col {
+  align-items: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 260px;
+  margin: 30px auto;
+  padding: 0;
+  width: 260px;
+}
+
+.elements-svg-ico {
+  display: flex;
+  height: 125px;
+  margin: 0 auto;
+}
+
+.graphic-box {
+  background-color: $white;
+
+  .graphic-block {
+    margin: 0 auto;
+    padding: 20px;
+
+    img {
+      display: flex;
+      margin: 0 auto;
+      max-width: 850px;
+      padding: 20px;
+      width: 100%;
+    }
+  }
+}
+
+.solutions-box {
+  align-items: center;
+  background-color: #243a79;
+  display: flex;
+  height: auto;
+  margin: 0px auto;
+  padding: 0;
+
+  h2 {
+    color: $white;
+    margin: 30px auto;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  ul > li {
+    color: $white;
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.8em;
+  }
+}
+
+.solutions-container-column {
+  margin: 40px auto;
+}
+
+.smartcards-box {
+  background-color: $white;
+  height: 100%;
+
+  h2 {
+    color: #314f96;
+    font-weight: bold;
+    padding: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  p {
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.smartcards-container {
+  display: flex;
+  margin: 30px auto;
+  margin-top: 0px;
+
+  .smartcards-rows {
+    display: flex;
+    flex-wrap: wrap;
+
+    .smartcards-block {
+      margin: 0 auto;
+
+      h2 {
+        color: #314f96;
+        font-weight: bold;
+        padding: 0px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
+      }
+    }
+  }
+
+}
+
+.mifare-logo {
+  display: flex;
+  height: 160px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+footer {
+  background-color: #434a54;
+  height: auto;
+
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+
+    .footer-address-list {
+      display: flex;
+      margin: 75px auto;
+
+      .footer-address-gua {
+        color: $white;        
+        text-align: left;
+      }
+
+      .footer-address-esp {
+        color: $white;        
+        text-align: right;
+      }
+
+      .footer-address-usa {
+        color: $white;
+      }
+    }
+  }
+}
+
+.mail-contact-box {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer-email-txt {
+  color: $white;
+  font-size: 1.5em;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.footer-email-txt:active {
+  color: $white;
+  text-decoration: none;
+}
+
+.footer-email-txt:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+.footer-email-ico {
+  height: 40px;
+  margin: 10px;
+}

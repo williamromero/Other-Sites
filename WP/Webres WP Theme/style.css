@@ -1,0 +1,75 @@
+/*
+	Theme Name: WebRes Studio Theme
+	Theme URI: http://webres-studio.com/
+	Author: WebRes-Studio
+	Author URI: Webres-Studio Team
+	Description: Special theme created by Webres Studio. This, will be the way we going to work.
+	Version: 1.0
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: technology, web design, front-end, back-end.
+	Text Domain: WebRes-Studio
+
+	This theme, like WordPress, is licensed under the GPL.
+	Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+* { border: 0; margin: 0px auto; padding: 0; }
+body { background-color: #fff -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; height: 100%; margin: 0px auto !important; padding: 0; width: 100%; }
+header { background-color: #38C483; display: block; height: auto; width: 100%; }
+/******************************* HEADER CODE ********************************/	
+.top_menu_nav { display: block; height: auto; margin: 0px auto; width: 980px; }
+.menu-main-menu-container { margin: 0px auto; padding: 0; width: 100%; }	
+.menu { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; height: auto; list-style: none; margin: 0px auto; text-decoration: none; width: 100%; }
+.menu_item { -webkit-align-items: center; align-self: center; font-family: 'Raleway'; font-size: 15px; font-weight: 700; margin-top: 0px; padding-left: 0; text-transform: uppercase; }
+.menu_item a { color: #FFF; font-family: 'Roboto', sans-serif; font-weight: 300; text-decoration: none; }
+.header-logo { height: auto; margin: 10px auto; padding: 0; width: 100px; }
+.logo-navbar{ height: auto; margin: 0px auto; }
+.logo-navbar a { display: block; height: auto; margin:0px auto; text-align: center; width: 100%; }
+/*.logo_center { height: auto; overflow: hidden; }
+.logo_center_link { position: absolute; }
+.logo_back { height: 120px; }*/
+
+/*#nav-toggle { display: none; }
+.responsive-logo { display: none; }
+/******************************* HEADER CODE ********************************/
+
+/******************************* INDEX CODE ********************************/
+.container { display: block; height: auto; margin: 0px auto; width: 100% }
+	.row-hero { background-color: #38C483; display: block; height: 500px; margin: 0px auto; width: 100%; }
+		.row-hero-img { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; height: auto; margin: 0px auto; width: 100%; }
+		.row-hero-svg { height: 50%; margin: 40px -10px 10px -9px; width: 100%; }
+		.row-hero p { color: #FFF; font-family: 'Roboto', sans-serif; font-size: 40px; font-weight: 300; padding: 35px 0px; text-decoration: none; text-align: center; }
+	.row-services-menu {  }
+		.our-services-svg { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; height: auto; margin: 0px auto; left: 0; right: 0; position: absolute; width: 355px; z-index: 11; }
+
+	.module.parallax { background-attachment: fixed; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; height: 400px; display: block; width: 100%; }
+		.module.parallax h1 { color: rgba(255, 255, 255, 1); font-family: 'Open Sans', sans-serif; font-size: 40px; font-weight: 600; margin: 10% 0 0 0; /*padding: 15% 0px;*/ position: absolute; text-align: center; /*text-transform: uppercase;*/ text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); width: 100%; z-index: 10; }
+		.module.parallax-1 { background-image: url("http://webres-studio.com/wp-content/uploads/2016/02/parallax-banner01.jpg"); width: 100%; }
+		.container-parallax { background-image: url("http://www.williamromerovela.com/img/subtle_carbon.png"); display: flex; height: 100%; margin: 0 auto; opacity: 0.5; width: 100%; }
+		.services-options-icons { align-items: center; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; height: 300px; justify-content: center; left: 0px; margin: 0px auto; margin-top: 50px; position: absolute; right: 0px; width: 980px; z-index: 1; }
+			.services-icons { /*border-bottom: 1px solid white;*/ border-width: 10%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; height: 120px; width: 16%; border-bottom: 3px solid transparent; transition: 0.5s ease; }
+			.services-icons:hover { border-bottom: 3px solid white; width: 160px; }	
+				.s-icon { width: 100%; }
+
+		.module.parallax-2 { background-image: url("http://webres-studio.com/wp-content/uploads/2016/02/parallax-banner01.jpg"); width: 100%; }
+		.container-parallax-2 { background-color: rgba(160,83,146,0.85); display: flex; height: 100%; margin: 0 auto; opacity: 0.5; width: 100%; }
+
+	.row-services { background-color: #34495e; height: 400px; display: block; margin: 0px auto; width: 100%; }
+		.row-services-box { display: flex; height: 100%; margin: 0px auto; width: 980px; }
+			.services-box-text { display: block; height: 100%; width: 50%; }
+			.services-box-text h2 { color: rgba(255, 255, 255, 1); font-family: 'Open Sans', sans-serif; font-size: 40px; font-weight: 600; margin: 10% 0 0 0; text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); width: 100%; }
+			.services-box-text p { color: rgba(255, 255, 255, 1); font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 400; margin: 5% 0 0 0; width: 90%; }
+			.services-box-image { display: flex; height: 100%; width: 50%; }
+				.services-box-icon { height: 70%; margin: 40px auto; width: auto; }	
+				.portfolio-box-icon { height: 70%; margin: 40px auto; width: auto; }
+
+			.portfolio-options-icons { align-items: center; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; height: 300px; justify-content: center; left: 0px; margin: 0px auto; margin-top: 80px; position: absolute; right: 0px; width: 980px; z-index: 1; }
+
+/******************************* INDEX CODE ********************************/
+
+@media only screen and (max-width: 480px){
+	.services-options-icons { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; height: 350px; justify-content: center; left: 0px; margin: 0px auto; margin-top: 50px; position: absolute; right: 0px; width: 480px; z-index: 1; }
+		.services-icons { width: 200px; }
+}
+

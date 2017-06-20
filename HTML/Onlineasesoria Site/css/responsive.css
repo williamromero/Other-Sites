@@ -1,0 +1,353 @@
+@media all screen and (max-width: 380px) {
+  html, body {
+    margin: 0 auto;
+    padding: 0; }
+
+  .col-xs-12 {
+    float: none; }
+
+  .row {
+    float: none;
+    margin: 0;
+    padding: 0; }
+
+  .footer-list li {
+    font-size: 0.5em; } }
+@media only screen and (max-width: 480px) {
+  .principal-header .principal-header-block .principal-header-logo-box img {
+    display: flex;
+    margin: 0 auto;
+    width: 80%; }
+  .principal-header .principal-header-block .principal-header-clientaccess-box {
+    display: none; }
+    .principal-header .principal-header-block .principal-header-clientaccess-box .principal-header-clientaccess-box-label {
+      display: none; }
+
+  .frontpage-header-nav {
+    display: none; }
+
+  .frontpage-responsive-header-nav {
+    display: flex;
+    padding: 0; }
+    .frontpage-responsive-header-nav .frontpage-responsive-header-block {
+      width: 100%; }
+      .frontpage-responsive-header-nav .frontpage-responsive-header-block .responsive-icon {
+        background-color: #008AD3;
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        padding: 1em; }
+      .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box {
+        background-color: #008AD3; }
+        .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive {
+          height: 0;
+          padding: 0;
+          transition: ease 0.5s; }
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li {
+            padding: 0.25em;
+            text-align: center; }
+            .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li a {
+              color: #ffffff;
+              text-decoration: none; }
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:hover,
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:active,
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:focus {
+            background-color: #006296;
+            cursor: pointer;
+            padding: 0.25em; }
+        .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive-activated {
+          height: 200px;
+          padding: 0;
+          transition: ease 0.5s; }
+
+  .frontpage-slider-block .frontpage-slider-box .frontpage-slider-box-imgs {
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0; }
+  .frontpage-slider-block .frontpage-slider-box .frontpage-slider-txt-box {
+    height: 18em; }
+
+  .frontpage-information-block {
+    display: flex;
+    float: none;
+    margin: 0 auto;
+    padding: 0; }
+    .frontpage-information-block .frontpage-information-block-group {
+      display: block; }
+      .frontpage-information-block .frontpage-information-block-group .frontpage-information-block-boxes {
+        float: none;
+        margin: 1em auto;
+        width: 80%; }
+      .frontpage-information-block .frontpage-information-block-group .fibb-spaces {
+        margin: 0 auto; }
+    .frontpage-information-block .frontpage-information-block-two .frontpage-information-block-two-up {
+      float: none;
+      width: 90%; }
+      .frontpage-information-block .frontpage-information-block-two .frontpage-information-block-two-up p {
+        padding: 1em 0; }
+    .frontpage-information-block .frontpage-information-block-two .frontpage-information-block-two-down {
+      float: none;
+      width: 90%; }
+
+  .frontpage-principal-info-elements-block {
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+    padding: 0; }
+    .frontpage-principal-info-elements-block .frontpage-info-elements-block {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      padding: 0; }
+      .frontpage-principal-info-elements-block .frontpage-info-elements-block .frontpage-info-elements-boxes {
+        height: auto;
+        padding: 0;
+        margin: 1em auto; }
+        .frontpage-principal-info-elements-block .frontpage-info-elements-block .frontpage-info-elements-boxes .fieb-img-block {
+          float: none;
+          margin: 0 auto;
+          padding: 0; }
+        .frontpage-principal-info-elements-block .frontpage-info-elements-block .frontpage-info-elements-boxes .fieb-block {
+          margin: 0 auto;
+          padding: 0; }
+
+  .services-principal-block {
+    display: flex;
+    margin: 0 auto;
+    padding: 0; }
+    .services-principal-block .services-principal-main-block {
+      display: flex;
+      margin: 0 auto;
+      text-align: center; }
+      .services-principal-block .services-principal-main-block .services-principal-label .services-label-line {
+        font-size: 0.6em; }
+
+  .services-info-elements-block .services-info-principal-block .services-info-elements-boxes .services-infoelements-boxes h3 {
+    font-size: 1em; }
+
+  .services-info-elements-boxes {
+    float: none;
+    margin: 1em auto;
+    padding: 0; }
+    .services-info-elements-boxes .services-infoelements-boxes {
+      margin: 1em auto; }
+
+  .services-container-one {
+    padding: 1em; }
+    .services-container-one .services-container-one-left,
+    .services-container-one .services-container-one-right {
+      margin: 0.75em auto; }
+
+  .services-container-two {
+    padding: 1em; }
+    .services-container-two .services-container-two-left,
+    .services-container-two .services-container-two-right {
+      margin: 0.75em auto; }
+
+  .howwework-slider-block .howwework-slider-box .howwework-slider-box-imgs {
+    height: 200px; }
+
+  .howwework-slider-box-imgs-elem {
+    height: 220px;
+    width: 100%; }
+
+  .howwework-slider-block .howwework-slider-box .howwework-slider-txt-box {
+    height: 250px; }
+
+  .howwework-svg-animated-element {
+    width: 60%; }
+
+  .howwework-information-block-group {
+    display: block; }
+
+  .advantages-principal-block .advantages-main-principal-block .advantages-left-sidebar-block {
+    height: 250px; }
+    .advantages-principal-block .advantages-main-principal-block .advantages-left-sidebar-block img {
+      top: -6em;
+      width: 100%;
+      position: absolute; }
+  .advantages-principal-block .advantages-main-principal-block .advantages-right-sidebar-block .advantages-top-row .advantages-main-field-box .advantages-main-field-block {
+    padding: 1em; }
+
+  .advantages-main-field-block {
+    padding: 1em; }
+
+  .contacto-principal-block .contacto-main-principal-block {
+    display: block;
+    float: left; }
+
+  .frontpage-white-square {
+    float: none;
+    height: 150px;
+    padding: 0; }
+    .frontpage-white-square .frontpage-white-block {
+      display: block;
+      float: none;
+      height: 150px;
+      padding: 0;
+      margin: 0 auto; }
+
+  .principal-footer {
+    display: block; }
+    .principal-footer .footer-ul-list {
+      float: none; }
+      .principal-footer .footer-ul-list .footer-list {
+        margin: 0 auto;
+        padding: 0; }
+        .principal-footer .footer-ul-list .footer-list li {
+          font-size: 0.6em;
+          margin: 0 auto;
+          padding: 1em 0; }
+    .principal-footer .footer-copyright p {
+      margin: 0 auto;
+      padding: 0.75em;
+      text-align: center; }
+
+  .footer-list-line {
+    display: none;
+    height: auto; }
+
+  .nav-tabs
+  .nav-item {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    float: left; }
+
+  .nav-tabs
+  .nav-item + .nav-item {
+    margin-left: 0;
+    border-radius: 0; }
+
+  .contacto-left-sidebar-block {
+    height: 300px; }
+    .contacto-left-sidebar-block img {
+      height: 500px;
+      position: relative;
+      width: 100%; }
+
+  .contacto-right-sidebar-block {
+    background: white;
+    position: absolute;
+    top: 300px; }
+
+  .contacto-principal-block .contacto-main-principal-block .contacto-right-sidebar-block .contact-form {
+    margin: 0 auto;
+    margin-bottom: 5em; } }
+@media only screen and (max-width: 768px) {
+  .principal-header-logo-img {
+    width: 100%; }
+
+  .frontpage-header-nav {
+    display: none; }
+
+  .frontpage-responsive-header-nav {
+    display: flex;
+    padding: 0; }
+    .frontpage-responsive-header-nav .frontpage-responsive-header-block {
+      width: 100%; }
+      .frontpage-responsive-header-nav .frontpage-responsive-header-block .responsive-icon {
+        background-color: #008AD3;
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        padding: 1em; }
+      .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box {
+        background-color: #008AD3; }
+        .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive {
+          height: 0;
+          padding: 0;
+          transition: ease 0.5s; }
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li {
+            padding: 0.25em;
+            text-align: center; }
+            .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li a {
+              color: #ffffff;
+              text-decoration: none; }
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:hover,
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:active,
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:focus {
+            background-color: #006296;
+            cursor: pointer;
+            padding: 0.25em; }
+        .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive-activated {
+          height: 200px;
+          padding: 0;
+          transition: ease 0.5s; }
+
+  .frontpage-slider-box-imgs-elem {
+    height: 100%; }
+
+  .frontpage-information-block .frontpage-information-container .frontpage-information-block-group {
+    display: block;
+    margin: 0 auto;
+    padding: 0 1em; }
+
+  .frontpage-information-block-boxes {
+    width: 45%; }
+
+  .frontpage-information-block-two-up {
+    float: none; }
+    .frontpage-information-block-two-up p {
+      font-size: 0.72em;
+      margin: 1em auto;
+      width: 90%;
+      padding: 1em 0; }
+
+  .frontpage-information-block-two-down {
+    float: none; }
+    .frontpage-information-block-two-down .frontpage-information-block-two-down-box {
+      display: flex;
+      height: 100%; }
+      .frontpage-information-block-two-down .frontpage-information-block-two-down-box img {
+        align-self: center;
+        height: 80px;
+        padding: 0.5em; }
+
+  .services-principal-block {
+    margin: 0 auto;
+    padding: 0; }
+
+  .services-label-line {
+    font-size: 0.8em; }
+
+  .services-info-elements-boxes {
+    float: none;
+    margin: 1em auto;
+    padding: 0; }
+    .services-info-elements-boxes .services-infoelements-boxes {
+      margin: 1em auto; }
+
+  .advantages-principal-block .advantages-main-principal-block .advantages-right-sidebar-block .advantages-top-row .advantages-main-field-box .advantages-main-field-block {
+    padding: 1em; }
+    .advantages-principal-block .advantages-main-principal-block .advantages-right-sidebar-block .advantages-top-row .advantages-main-field-box .advantages-main-field-block .advantages-field-box-ribbon h3 {
+      font-size: 0.95em; }
+    .advantages-principal-block .advantages-main-principal-block .advantages-right-sidebar-block .advantages-top-row .advantages-main-field-box .advantages-main-field-block .advantages-field-box-paragraph p {
+      font-size: 0.75em; }
+
+  .contacto-left-sidebar-block {
+    height: auto; }
+
+  .principal-footer {
+    display: block; }
+    .principal-footer .footer-list {
+      margin: 0 auto;
+      padding: 0; }
+      .principal-footer .footer-list li {
+        font-size: 0.6em;
+        margin: 0 auto;
+        padding: 1em 0; }
+    .principal-footer .footer-copyright p {
+      margin: 0 auto;
+      padding: 0.75em;
+      text-align: center; }
+
+  .footer-list-line {
+    display: none;
+    height: auto; } }
+
+/*# sourceMappingURL=responsive.css.map */

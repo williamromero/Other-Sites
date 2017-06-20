@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+    <script>
+       $(function() {
+         $('a[href*=#]:not([href=#])').click(function() {
+           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+             var target = $(this.hash);
+             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                 scrollTop: target.offset().top
+               }, 1000);
+               return false;
+             }
+           }
+         });
+       });
+    </script>
+    <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+          if ((window.pageYOffset) >= 500) {
+            document.querySelector('.navbar').style.backgroundColor = '#ffffff';
+            document.querySelector('.navbar').style.height = '80px';
+            document.querySelector('.bg-faded').style.boxShadow = '0px 3px 15px rgba(0, 0, 0, 0.3)';
+            Array.prototype.slice.call(document.querySelectorAll('.nav-link')).forEach(function (el) {
+              el.style.color = '#424A4E';
+            });
+          } else {
+            document.querySelector('.navbar').style.backgroundColor = 'transparent';
+            document.querySelector('.bg-faded').style.boxShadow = '0px 0px 0px transparent'
+            Array.prototype.slice.call(document.querySelectorAll('.nav-link')).forEach(function (el) {
+              el.style.color = '#ffffff';
+            });
+          }
+      });
+    </script>  
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <div class="col-md-10 header-navbar">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/munditel-logo.svg">
+        </a>
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#quienes">Nosotros <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#soluciones">Nuestras Soluciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactanos">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  
+    <div class="jumbotron jumbotron-fluid principal-slider">
+      <div class="container principal-container">
+        <div class="col-md-10 principal-slider-txt">
+          <h1 class="display-3"><!-- Fluid jumbotron --></h1>
+          <p class="lead">Soluciones inteligentes para la recaudación, control y<br/>administración de transporte.</p>
+          <div class="col-md-5 slider-line-btn">
+            <a href="#quienes" class="btn btn-outline-success jumbo-button">Ver más</a>
+          </div>
+        </div>
+      <!-- <img src="imgs/card-train-payment-shadow-01.jpg" class="principal-slider-img"> -->
+      </div>
+    </div>
+    <div class="container-fluid principal-box" id="quienes">
+      <div class="col-md-10 principal-container-box">
+        <div class="container-fluid principal-description-box">
+          <h2>Nosotros</h2>
+          <p>Somos una empresa centroamericana especializada en desarrollar e implementar soluciones tecnológicas de vanguardia para el recaudo automatizado de ingresos de transporte público, que optimizan y garantizan las operaciones de las empresas de transporte de pasajeros.</p> 
+<!--           <button type="button" class="btn btn-info description-button">Ver más</button> -->
+        </div>      
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid banner-information-two">
+      <div class="banner-information-container">
+        <div class="col-xs-12 col-md-8 banner-information-box"> 
+          <div class="col-xs-5 col-md-4 banner-info-icon">
+            <img src="imgs/payment-two-ico.svg" class="banner-info-svg">
+          </div>
+          <div class="col-xs-7 col-md-8 banner-info-desc">
+            <p class="banner-info-txt"> Desarrollamos sistemas de recaudación integrales que optimizan la gestión del transportista y mejoran la experiencia del usuario. </p>
+          </div>
+        </div>
+      </div>
+<!--       <img src="imgs/card-train-payment-shadow.jpg" class="banner-information-two-img"> -->
+      <div class="banner-information-shade"></div>
+    </div>
+    <div class="container-fluid principal-container">
+      <div class="row first-section">
+        <div class="container first-section-box">
+          <div class="row first-section-block">
+            <div class="col-xs-12 col-md-3 boxes-col elements-technology-item">
+              <img src="imgs/technology-ico.svg" class="elements-svg-ico">
+            </div>
+            <div class="col-xs-12 col-md-3 boxes-col elements-localization-item">
+              <img src="imgs/localization-ico.svg" class="elements-svg-ico">
+            </div>
+            <div class="col-xs-12 col-md-3 boxes-col elements-payment-item">
+              <img src="imgs/payment-ico.svg" class="elements-svg-ico">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid solutions-box" id="soluciones">
+      <div class="container solutions-container">
+        <h2>Nuestras Soluciones</h2>
+        <div class="col-md-6 solutions-container-column">
+          <ul>
+            <li><p>Sistema de Recaudo Prepago, utilizando tarjetas Inteligentes de Proximidad o mediante dispositivos móviles (teléfonos) con tecnología NFC.</p></li>
+            <li><p>Control de Acceso de pasajeros utilizando validadores, lectores de tarjetas de proximidad o dispositivos NFC que activan molinetes o torniquetes.</p></li>
+            <li><p>Venta y Recarga de Tarjetas de Proximidad</p></li>
+            <li><p>Sistemas de Control de Pasajeros.</p></li>
+            <li><p>Integración de Consola de Piloto.</p></li>
+          </ul>
+        </div>
+        <div class="col-md-6 solutions-container-column">
+          <ul>
+            <li><p>Integración de Puntos de Venta y Recarga de Tarjetas en tiendas de Conveniencia.</p></li>
+            <li><p>Recarga de Tarjetas de Proximidad a través de tarjetas de crédito/débito y mediante cuentas bancarias (ACH).</p></li>
+            <li><p>Centro de Control y Monitoreo de Flotas de Autobuses.</p></li>
+            <li><p>Sistema Integrado de Video-vigilancia.</p></li>
+            <li><p>Infraestructura de telecomunicaciones para integrar en Red Privada las unidades vehiculares con el Centro de Control y Call Center de Servicio al Cliente.</p></li>
+            <li><p>Sistema de Gestión Financiera integrado.</p></li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+    <div class="container-fluid graphic-box">
+      <div class="graphic-block">
+        <img src="imgs/munditel-bus.svg" />
+      </div>
+    </div>
+    <div class="container-fluid banner-information-one">
+      <div class="banner-information-container">
+        <div class="col-xs-12 col-md-8 banner-information-box"> 
+          <div class="col-xs-5 col-md-4 banner-info-icon">
+            <img src="imgs/localization.svg" class="banner-info-svg">
+          </div>
+          <div class="col-xs-7 col-md-8 banner-info-desc">
+            <p class="banner-info-txt"> Sistemas de control y gestión en tiempo real que proporcionan información completa disponible desde cualquier dispositivo a cualquier hora. </p>
+          </div>
+        </div>
+      </div>
+<!--       <img src="imgs/card-train-payment-shadow.jpg" class="banner-information-two-img"> -->
+      <div class="banner-information-shade"></div>
+    </div>
+    <div class="container-fluid smartcards-box">
+      <img src="https://www.mifare.net/wp-content/themes/p371-mifare-theme/img/mifare_logo_rgb.png" class="mifare-logo">
+      <h2>TARJETAS INTELIGENTES</h2>
+      <p>Tarjetas de Proximidad "SIN CONTACTO" que se utilizan en aplicaciones de acceso seguro o como sistema de pago.</p>
+      <div class="container smartcards-container">
+        <div class="row smartcards-rows">
+          <div class="col-xs-11 col-md-5 smartcards-block">
+            <h2>Familia MIFARE Classic</h2>
+            <p>Es el producto pionero de tarjetas de proximidad o tarjetas inteligentes sin contacto que operan a una frecuencia de 13.56MHz con capacidad de lectura/escritura y cumpliendo la norma ISO 14443. Su principal uso ha sido en sistemas de acceso para transporte público.</p>
+            <p>La Mifare Classic EV1 representa la más alta evolución de productos de su línea y supera las versiones anteriores; disponible con memoria de 1K y 4K según las aplicaciones lo requieran.</p>
+          </div>
+          <div class="col-xs-11 col-md-5 smartcards-block">
+            <h2>Familia MIFARE DESFire</h2>
+            <p>Formada por los productos DESFire EV1 y DESFire EV2, ideal para soluciones de tarjetas inteligentes sin contacto, fiables, interoperables y escalables. Está dirigido a soluciones multi-aplicación con tarjetas inteligentes para identidad, acceso, fidelidad, micro-pago e ideal para sistemas de transporte.</p>
+            <p>Las características principales del chip quedan indicadas en su nombre: DESFire, “DES” se refiere al uso del motor criptográfico por hardware DES, 2K3DES, 3K3DES y AES para una transmisión de datos segura, mientras que “Fire” es acrónimo de un funcionamiento Rápido, Innovador, Fiable y Mejorado (Fast, Innovative, Reliable and Enhanced).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid footer-container" id="contactanos">
+      <div class="container mail-contact-box">
+        <a href="mailto:info@munditelsa.com" class="footer-email-txt"><img src="imgs/email-ico.svg" class="footer-email-ico" />info@munditelsa.com</a>
+      </div>
+      <div class="container footer-box">
+        <div class="col-xs-12 col-md-3 footer-address-list">
+          <p class="footer-address-gua"><strong>GUATEMALA</strong>
+            <br/>20 Calle 22-18 Zona 10
+            <br/>No. 6, 01010
+            <br/>T. +502 23614290
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-3 footer-address-list">
+          <p class="footer-address-usa"><strong>USA</strong>
+            <br/>Betmar Boulevard
+            <br/>North Fort Myers FL, 33903
+            <br/>T. +1 239 8226995
+          </p>       
+        </div>
+        <div class="col-xs-12 col-md-3 footer-address-list">
+          <p  class="footer-address-esp"><strong>ESPAÑA</strong>
+            <br/>Calle Roberto Tojeiro No. 1
+            <br/>Entlo. A-B A Coruña, 15009
+            <br/>T. +34 620 806 529
+          </p> 
+        </div>                
+      </div>
+    </footer>
+  </body>
+</html>

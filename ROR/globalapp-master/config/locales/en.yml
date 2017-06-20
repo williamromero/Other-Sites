@@ -1,0 +1,22 @@
+en:
+  posts:
+    new:
+      title: Title
+      body: Body
+      newPost: New Post
+      btn_destroy: destroy
+    index:
+      title: Title
+      body: Body      
+      mainTitle: Listing Post
+      btn_show: Show
+      btn_edit: Edit
+      btn_destroy: Delete
+    form:
+      title: Title
+      body: Body      
+    edit:
+      title: Edit Post
+    show:
+      title: Title
+      body: Body

@@ -1,0 +1,720 @@
+@font-face {
+  font-family: 'proximanova-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/proximanova-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'proximanova-semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/proximanova-semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'proximanova';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/proximanova.woff') format('woff');
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+html, body {
+  display: block;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  max-width: 1080px;
+}
+
+.row {
+  padding: 0;
+}
+
+.top-header {
+  float: none;
+  height: 1.5em;
+  margin: 0 auto;
+  padding: 0;
+
+  .link-client-login {
+    background: #cacaca;
+    border-radius: 0 0 5px 5px;
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+
+  .link-client-login:hover,
+  .link-client-login:active {
+    background: #8dc73f;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.nav-main {
+  float: none;
+  height: 90px;
+  padding: 0;
+
+  .nav-main-logo {
+    display: flex;
+    padding: 0;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.responsive-icon {
+  display: none;
+}
+
+.responsive-menu {
+  display: none;
+
+  .responsive-menu-nav {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  float: right;
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  right: 0;
+
+  .nav-item {
+    display: flex;
+
+    .nav-link {
+      align-self: center;
+      cursor: pointer;
+      color: #848484;
+      font-size: 0.7em;
+    }
+  }
+}
+
+.navbar-nav > .nav-item > .nav-link:hover {
+  align-self: center;
+  color: #8dc73f;
+  cursor: pointer;
+  font-size: 0.7em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+// .nav-link {
+//   align-self: center;
+//   color: #5c5c5c;
+//   font-size: 0.7em;
+
+//   :hover,
+//   :active,
+//   :focus {
+//     align-self: center;
+//     color: #8dc73f;
+//     font-size: 0.7em;
+//     font-style: italic;
+//     font-weight: bold;
+//   }
+// }
+
+// SLIDER CONTENT //
+
+.carousel {
+  float: none;
+  margin: 0 auto;
+  padding: 0 3px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-indicators {
+  bottom: -10px;
+}
+// SLIDER CONTENT //
+
+// HOME //
+.front-page-services-block {
+  display: flex;
+  float: none;
+  margin: 1.5em auto;
+  padding: 0;
+
+  .services-items {
+    border: 1px solid #cacaca;
+    cursor: pointer;
+    float: none;
+    margin: 0 3px;
+    padding: 0;
+
+    :hover,
+    :active,
+    :focus {
+      border: 1px solid #8dc73f;
+    }
+  }
+}
+
+.front-page-business-block {
+  float: none;
+  margin: 1.5em auto;
+  padding: 0;
+
+  .business-block-one {
+    border-right: 1px solid #cacaca;
+    margin: 0;
+    padding: 0;
+
+    .business-block-one-map {
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .business-block-one-txt {
+      margin: 0;
+    }
+  }
+}
+
+
+.front-page-business-block >
+.business-block-one >
+.business-block-one-txt >
+.business-block-one-btn:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.front-page-business-block >
+.business-block-two >
+.business-block-two-txt >
+.business-block-one-btn:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.business-block-two-txt {
+  width: auto;
+}
+
+.bussines-block-one-title {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: justify;
+}
+
+.bussines-block-one-paragraph {
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+.business-block-one-btn {
+  background-color: #8dc73f;
+  color: #fff;
+  padding: 5px 20px;
+  text-decoration: none;
+
+}
+// HOME //
+
+// ABOUT US //
+.aboutus-page-banner-block {
+  float: none;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+
+  .aboutus-page-banner-block-img {
+    height: 100%;
+    padding: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .aboutus-page-banner-block-txt {
+    align-items: center;
+    background-color: #4c9b10;
+    display: flex;
+    height: 100%;
+    padding: 0;
+
+    p {
+      color: white;
+      font-family: 'proximanova-bold';
+      font-size: 2.3em;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 1.3em;
+      width: 70%;
+    }
+  }
+
+}
+
+.aboutus-page-text-block {
+  display: flex;
+  float: none;
+  margin: 20px auto;
+  // margin-bottom: 15em;
+  overflow: hidden;
+  padding: 0;
+
+  p {
+    font-size: 0.8em;
+    text-align: justify;
+  }
+
+  .aboutus-page-text-block-firm {
+    float: right;
+  }
+}
+// ABOUT US //
+
+// INTERNATIONALIZATION //
+
+.internationalization-page-banner-block {
+  float: none;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+
+  .internationalization-page-banner-block-img {
+    height: 100%;
+    padding: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .internationalization-page-banner-block-txt {
+    align-items: center;
+    background-color: #4c9b10;
+    display: flex;
+    height: 100%;
+    padding: 0;
+
+    p {
+      color: white;
+      font-family: 'proximanova-semibold';
+      font-size: 2.3em;
+      font-style: italic;
+      line-height: 1.3em;
+      width: 70%;
+    }
+  }
+
+}
+
+.internationalization-page-text-block {
+  display: flex;
+  float: none;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0;
+  padding-right: 5px;
+
+  .internationalization-page-txt-one {
+    border-right: 1px solid #cacaca;
+
+    p {
+      color: #848484;
+      font-size: 0.9em;
+      padding-right: 1.5em;
+      text-align: justify;
+    }
+  }
+
+  .internationalization-page-txt-two {
+
+    ul {
+      list-style: none;
+      padding-left: 1em;
+
+      li {
+        color: #848484;
+        font-size: 0.8em;
+        line-height: 2.5;
+      }
+
+      li:before {
+        color: #8dc73f;
+        content: "• ";
+      }
+    }
+  }
+}
+// INTERNATIONALIZATION //
+
+// ENTREPRENEURS //
+.entrepreneurs-page-banner-block {
+  float: none;
+  height: 295px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+
+  .entrepreneurs-page-banner-block-img {
+    display: flex;
+    float: none;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    img {
+      height: 100%;
+      padding: 0 15px;
+      width: 100%;
+    }
+  }
+}
+
+.entrepreneurs-page-text-block {
+  display: flex;
+  float: none;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0;
+  padding-right: 5px;
+
+  .entrepreneurs-page-txt-one {
+
+    h1 {
+      color: #848484;
+      font-size: 2.1em;
+      font-style: italic;
+      padding-left: 0.25em;
+
+      strong {
+        color: #8dc73f;
+      }
+    }
+  }
+
+  .entrepreneurs-page-txt-two {
+
+    p {
+      color: #848484;
+      font-size: 0.9em;
+      padding-right: 1.5em;
+    }
+  }
+}
+// ENTREPRENEURS //
+
+// SERVICES //
+.services-page-banner-block {
+  float: none;
+  height: 270px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+
+  .services-page-banner-block-img {
+    display: flex;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+
+    img {
+      height: 100%;
+      overflow: hidden;
+      padding: 0 15px;
+      width: 100%;
+    }
+  }
+
+  .services-page-banner-block-txt {
+
+    h1 {
+      color: #8dc73f;
+      font-size: 2.3em;
+      font-style: italic;
+      padding: 0.3em;
+      text-align: center;
+    }
+  }
+}
+
+.services-page-banner-title {
+  float: none;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+
+  h1 {
+    color: #8dc73f;
+    font-size: 2.3em;
+    font-style: italic;
+    padding: 0.3em;
+    text-align: center;
+  }
+
+}
+
+.services-page-text-block {
+  display: flex;
+  float: none;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0;
+  padding-right: 5px;
+
+  .services-page-txt-one {
+    border-right: 1px solid #cacaca;
+
+    .services-page-txt-one-title {
+      color: #8dc73f;
+      font-family: 'proximanova-semibold';
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1em;
+
+      li {
+        color: #848484;
+        font-size: 0.8em;
+        line-height: 2.5;
+      }
+
+      li:before {
+        color: #8dc73f;
+        content: "• ";
+      }
+
+      li:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .services-page-txt-two {
+
+    p {
+      color: #848484;
+      font-size: 0.9em;
+      padding-left: 1.5em;
+      text-align: justify;
+    }
+  }
+}
+// SERVICES //
+
+// CONTACT //
+.contact-page-banner-block {
+  float: none;
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+
+  .contact-page-banner-block-img {
+    display: flex;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+
+    img {
+      height: 100%;
+      overflow: hidden;
+      padding: 0 15px;
+      width: 100%;
+    }
+  }
+
+  .contact-page-banner-block-txt {
+
+    h1 {
+      color: #8dc73f;
+      font-size: 2.3em;
+      font-style: italic;
+      padding: 0.3em;
+      text-align: center;
+    }
+  }
+}
+
+.contact-page-text-block {
+  display: flex;
+  float: none;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0;
+  padding-right: 5px;
+
+  .contact-page-txt-one {
+    border-right: 1px solid #cacaca;
+
+    .contact-page-txt-one-title {
+      color: #8dc73f;
+      font-family: 'proximanova-semibold';
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0.5em;
+
+      li {
+        color: #848484;
+        font-size: 0.8em;
+        line-height: 2.5;
+      }
+
+      li:before {
+        color: #8dc73f;
+        content: "• ";
+      }
+    }
+  }
+}
+
+.form-group {
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  label {
+    margin-bottom: 0;
+  }
+
+  .form-control {
+    font-size: 0.7rem;
+  }
+}
+
+// CONTACT //
+// CLIENTES //
+.clients-page-banner-block {
+  float: none;
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+
+  .clients-page-banner-block-img {
+    display: flex;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+
+    img {
+      height: 100%;
+      overflow: hidden;
+      padding: 0 15px;
+      width: 100%;
+    }
+  }
+}
+
+.clients-page-text-block {
+  display: flex;
+  float: none;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0;
+  padding-right: 5px;
+
+  .clients-page-txt-one {
+    border-right: 1px solid #cacaca;
+
+   h1 {
+      color: #848484;
+      font-size: 1.5em;
+      margin: 2em auto;
+      padding-left: 1em;
+      text-align: center;
+
+      strong {
+        color: #8dc73f;
+      }
+    }
+  }
+
+  .clients-page-txt-two {
+
+    ul {
+      list-style: none;
+      padding-left: 1em;
+
+      li {
+        color: #848484;
+        font-size: 0.8em;
+        line-height: 2.5;
+      }
+
+      li:before {
+        color: #8dc73f;
+        content: "• ";
+      }
+    }
+  }
+}
+// CLIENTES //
+
+.front-end-blank-line {
+  height: 100px;
+}
+
+.front-end-footer {
+  background-color: #404041;
+  bottom: 0;
+  height: 100px;
+  // position: absolute;
+  width: 100%;
+
+  p {
+    color: #8d8d8e;
+    font-size: 0.9em;
+    padding: 1em 0;
+    text-align: center;
+
+    .front-end-footer-icon {
+      cursor: pointer;
+      height: 30px;
+    }
+  }
+}

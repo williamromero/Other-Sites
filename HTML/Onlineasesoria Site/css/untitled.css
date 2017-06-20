@@ -1,0 +1,101 @@
+@media all screen and (max-width: 380px) {
+  html, body {
+    margin: 0 auto;
+    padding: 0; }
+
+  .col-xs-12 {
+    float: none; }
+
+  .row {
+    float: none;
+    margin: 0;
+    padding: 0; } }
+@media only screen and (max-width: 980px) {
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  .principal-header .principal-header-block .principal-header-logo-box img {
+    display: flex;
+    margin: 0 auto;
+    width: 80%; }
+  .principal-header .principal-header-block .principal-header-clientaccess-box {
+    display: none; }
+    .principal-header .principal-header-block .principal-header-clientaccess-box .principal-header-clientaccess-box-label {
+      display: none; }
+
+  .frontpage-header-nav {
+    display: none; }
+
+  .frontpage-responsive-header-nav {
+    display: flex;
+    padding: 0; }
+    .frontpage-responsive-header-nav .frontpage-responsive-header-block {
+      width: 100%; }
+      .frontpage-responsive-header-nav .frontpage-responsive-header-block .responsive-icon {
+        background-color: #008AD3;
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        padding: 1em; }
+      .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box {
+        background-color: #008AD3; }
+        .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive {
+          height: 0;
+          padding: 0;
+          transition: ease 0.5s; }
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li {
+            padding: 0.25em;
+            text-align: center; }
+            .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li a {
+              color: #ffffff;
+              text-decoration: none; }
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:hover,
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:active,
+          .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive li:focus {
+            background-color: #006296;
+            cursor: pointer;
+            padding: 0.25em; }
+        .frontpage-responsive-header-nav .frontpage-responsive-header-block .frontpage-header-navbar-box .navbar-responsive-activated {
+          height: 200px;
+          padding: 0;
+          transition: ease 0.5s; }
+
+  .frontpage-slider-block .frontpage-slider-box .frontpage-slider-box-imgs {
+    height: 250px; }
+  .frontpage-slider-block .frontpage-slider-box .frontpage-slider-txt-box {
+    height: 250px; }
+    .frontpage-slider-block .frontpage-slider-box .frontpage-slider-txt-box .frontpage-slider-txt-box-ribbon label {
+      margin: 0 auto;
+      padding: 1em; }
+    .frontpage-slider-block .frontpage-slider-box .frontpage-slider-txt-box .frontpage-slider-txt-pgh .frontpage-slider-txt-parragraph {
+      padding: 0.5em 1em;
+      text-align: left; }
+
+  .frontpage-information-block .frontpage-information-container .frontpage-information-block-group {
+    display: block;
+    width: 100%; }
+    .frontpage-information-block .frontpage-information-container .frontpage-information-block-group .frontpage-information-block-boxes {
+      width: 90%; }
+      .frontpage-information-block .frontpage-information-container .frontpage-information-block-group .frontpage-information-block-boxes .frontpage-information-block-boxes-title .fibb-txt-one {
+        font-size: 1.5em;
+        font-weight: 700; }
+      .frontpage-information-block .frontpage-information-container .frontpage-information-block-group .frontpage-information-block-boxes .fibbxc-space .fibbxc-little-box h2 {
+        font-size: 1em; }
+      .frontpage-information-block .frontpage-information-container .frontpage-information-block-group .frontpage-information-block-boxes .fibbxc-space .fibbxc-big-box h2 {
+        font-size: 1em; }
+  .frontpage-information-block .frontpage-information-container .frontpage-information-block-two {
+    width: 100%; }
+    .frontpage-information-block .frontpage-information-container .frontpage-information-block-two .frontpage-information-block-two-up {
+      float: initial;
+      width: 60%; }
+      .frontpage-information-block .frontpage-information-container .frontpage-information-block-two .frontpage-information-block-two-up p {
+        padding: 1em; }
+    .frontpage-information-block .frontpage-information-container .frontpage-information-block-two .frontpage-information-block-two-down {
+      float: initial;
+      width: 60%; }
+  .frontpage-information-block .frontpage-information-container .fibb-spaces {
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=untitled.css.map */

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Globalapp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <%= link_to_unless_current "English", locale: "en" %> |
+        <%= link_to_unless_current "Spanish", locale: "es" %>
+      </div>  
+      <%= yield %>
+    </div>
+  </body>
+</html>

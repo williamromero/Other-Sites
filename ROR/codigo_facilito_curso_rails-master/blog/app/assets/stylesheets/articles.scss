@@ -1,0 +1,40 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.articles-new-block {
+  // background-color: $white;
+  border-radius: 5px;
+  // box-shadow: 0 0 10px $block-shadows;
+  float: none;
+  margin: 0 auto;
+  padding: 30px;
+
+  .articles-new-block-title-txt {
+    padding: 0;
+  }
+}
+
+.articles-general-container {
+  display: flex;
+  float: none;
+  height: auto;
+}
+
+.articles-card-container {
+  // display: flex;
+  margin: 1em;
+}
+
+.articles-container-table {
+  // background-color: $white;
+  border-radius: 5px;
+  // box-shadow: 0 0 5px $block-shadows;
+  margin: 2.5em auto;
+  padding: 1em;
+
+  .articles-table-view {
+    margin: 0 auto;
+    padding: 0;
+  }
+}

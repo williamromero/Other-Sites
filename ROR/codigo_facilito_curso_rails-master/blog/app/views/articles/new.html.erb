@@ -1,0 +1,31 @@
+<div class="container">
+<br>
+  <div class="col-md-6 articles-new-block">
+    <h1 class="articles-new-block-title-txt"> Crear artículo: </h1>
+    <%= form_for(@article) do |f| %>
+      
+
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+        
+        <% @article.errors.full_messages.each do |message| %>
+          <div class="alert alert-<%= key %>"> <%= message %></div>
+        <% end %>  
+      
+      <% end %>
+
+
+      <div class="form-group row">
+        <label for="form-control"> Ingrese el título: </label>
+        <%= f.text_field :title, placeholder: "Título", :class => 'form-control' %>
+      </div>
+      <div class="form-group row">
+        <label for="form-control"> Inserte el contenido: </label>
+        <%= f.text_area :body,  placeholder: "Escribe aquí tu articulo", :class => 'form-control', rows: "4" %>    
+      </div>
+      <div class="form-group row">
+        <%= f.submit "Crear artículo", :class => 'btn btn-success btn-lg btn-block' %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+  <nav class="principal-header">
+    <div class="container principal-header-container">
+      <%= link_to image_tag("logo.svg", :alt => "WEBRES STUDIO", :class => "navbar-brand") + 'WEBRES STUDIO', root_path, :class => 'nav-link-block col-md-3' %>
+      <ul class="nav navbar-nav col-md-8">
+        <li class="nav-item active">
+          <%= link_to 'Inicio', {:controller => 'frontpages', :action => 'index'}, :class => 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Blog', {:controller => 'articles', :action => 'index'}, :class => 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,18 @@
+<div class="container">
+  <br/>
+  <h1>
+    <%= @article.title %>
+  </h1>
+  <div>
+    <p><%= @article.body %></p>
+
+    <p><strong>Contador:</strong>  
+      <%= @article.counter %>
+    </p>
+  </div>
+
+  <%= link_to 'Crear post', new_article_path %> &#124;
+  <%= link_to 'Editar', edit_article_path %> &#124;
+  <%= link_to 'Regresar', articles_path %>
+
+</div>

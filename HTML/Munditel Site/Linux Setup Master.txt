@@ -1,0 +1,91 @@
+/////////////////////////////////// SETUP LINUX SERVER //////////////////////////////////////
+
+	sudo nano etc/hostname
+
+		kiddos
+
+	sudo nano etc/hosts
+
+		127.0.0.1       localhost
+		127.0.1.1       debian
+		45.79.187.243   kiddos.gt kiddos
+
+
+	sudo apt-get update && sudo apt-get upgrade
+	sudo apt-get install apache2
+
+	**** Just if server gives the next error: pache2apache2: apr_sockaddr_info_get() ****
+	
+	sudo nano apache2.conf
+
+		Insert:
+			ServerName localhost
+		Reset:
+			sudo    /etc/init.d/apache2  restart
+
+	*************************************************************************************
+
+		sudo service apache2 reload
+	sudo apt-get install mysql-server mysql-client
+	sudo apt-get install php5 php5-mysql php5-gd libapache2-mod-php5
+		service apache2 restart
+	sudo apt-get install phpmyadmin
+		service apache2 restart
+	sudo a2enmod rewrite
+		service apache2 restart
+
+/////////////////////////////////// SETUP LINUX SERVER //////////////////////////////////////
+
+/////////////////////////////// VIRTUAL HOST CONFIGURATION //////////////////////////////////
+
+	- CREATE WEB FOLDER -
+
+		cd /var/www/
+		mkdir kiddos
+		cd /
+		cd /etc/apache2/sites-available
+		nano kiddos.gt
+
+		******************************** kiddos.gt ****************************************
+
+			<VirtualHost *:80>
+			        ServerAdmin info@webres-studio.com
+			        DocumentRoot /var/www/Kiddos
+			        ServerName kiddos.gt
+			        ServerAlias www.kiddos.gt
+
+			        DocumentRoot /var/www/Kiddos
+			        <Directory />
+			                Options FollowSymLinks
+			                AllowOverride All
+			        </Directory>
+			        <Directory /var/www/Kiddos>
+			                Options Indexes FollowSymLinks MultiViews
+			                AllowOverride All
+			                Order allow,deny
+			                allow from all
+			        </Directory>
+
+			        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+			        <Directory "/usr/lib/cgi-bin">
+			                AllowOverride None
+			                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+			                Order allow,deny
+			                Allow from all
+			        </Directory>
+
+			        ErrorLog ${APACHE_LOG_DIR}/error.log
+
+			        # Possible values include: debug, info, notice, warn, error, crit,
+			        # alert, emerg.
+			        LogLevel warn
+
+			        CustomLog ${APACHE_LOG_DIR}/access.log combined
+			</VirtualHost>
+			******************************** kiddos.gt ****************************************
+
+		a2ensite kiddos.gt
+		service apache2 reload
+
+
+/////////////////////////////// VIRTUAL HOST CONFIGURATION //////////////////////////////////

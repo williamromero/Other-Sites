@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1> <%= t('posts.index.mainTitle') %></h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th><%= t('posts.index.title') %></th>
+      <th><%= t('posts.index.body') %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.body %></td>
+
+      <td><%= link_to t('posts.index.btn_show'), post %></td>
+      <td>
+
+
+        <%= link_to t('posts.index.btn_edit'), edit_post_path(post) %></td>
+
+        <td><%= link_to t('posts.index.btn_destroy'), post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br/>
